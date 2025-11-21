@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Search</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <div id="searchResults">
+        {% if results %}
+        <p>{{ results }}</p>
+        {% else %}
+            <p>No results found.</p>
+        {% endif %}
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
